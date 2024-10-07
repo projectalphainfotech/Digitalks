@@ -232,6 +232,7 @@ nav ul li a {
     background-color: rgb(243,243,243);
     padding:3vh 3vh;
     font-size: 2vh;
+    cursor: pointer;
 
     &:hover .serve-text{
         font-size: 2.5vh;
@@ -338,9 +339,12 @@ nav ul li a {
     display: flex;
     gap: 50px;
 }
-.main-carousel{
+.carousel-ap{
     margin-top: 3%;
-    z-index: -1;
+    /* z-index: -1; */
+    /* height: 400px; */
+    display: flex;
+    gap: 2rem;
 }
 
 .review{
@@ -547,7 +551,7 @@ nav ul li a {
 
 .number{
     display: flex; 
-    justify-content: space-between; 
+    justify-content: center; 
     background-color: rgb(35,35,35);
     padding: 3% 20%; 
     margin-top: 4%;
@@ -567,22 +571,23 @@ nav ul li a {
     align-items: center;
 }
 
-.cell{
-    width: 33%;
-    height: 600px;
+.cello{
+    width: 100%;
+    height: auto;
     margin: 0 5px;
     overflow: hidden;
-}
-
-.cell img{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .cello img{
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     transition: transform .3s;
 
-    &:hover {
-        transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    }
+    /* &:hover {
+      transform: scale(1.2); 
+    } */
 }
 
 .flickity-page-dots .dot.is-selected {
@@ -638,6 +643,35 @@ nav ul li a {
     .review-desc{
       width: 100%;
     }
+
+    .carousel-ap{
+      flex-direction: column;
+    }
+
+    @keyframes anim2 {
+      0%{
+        margin-top: 0;
+        /* margin-bottom: 10%; */
+      }
+      16%{
+        margin-top: -600px;
+      }
+      33%{
+        margin-top: -1200px;
+      }
+      50%{
+        margin-top: -1700px;
+      }
+      66%{
+        margin-top: -1000px;
+      }
+      82%{
+        margin-top: -500px;
+      }
+      100%{
+        margin-top: 0;
+      }
+    }
 }
 @media (max-width:960px){
     .cell{
@@ -689,6 +723,13 @@ nav ul li a {
   }
   .web-dev-agen{
     margin-top: 100px;
+  }
+  
+  }
+
+  @media (max-width:394px){
+  .line2{
+    height: fit-content;
   }
   
   }
