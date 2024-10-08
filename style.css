@@ -13,6 +13,7 @@ nav {
     /* display: flex; */
     /* justify-content: space-between; */
     position: fixed;
+    z-index: 99;
 }
   
 .logo img{
@@ -150,17 +151,35 @@ nav ul li a {
 
 
 .background {
-    background-image: url('Images/bg-img.jpg'); 
-    background-size: cover;
-    background-position: center; 
+    /* background-image: url('Images/nilesh.png');  */
+    /* background-size: cover; */
+    /* background-position: center;  */
     height: fit-content;
+    background-position: right;
     display: flex;
     flex-direction: column;
+    background: black;
     /* justify-content: start;  */
     /* align-items: center;  */
     padding: 0% 10% ;
+    background-repeat: no-repeat;
 }
 
+.let1{
+  z-index: 3;
+}
+.nilesh{
+  height: 30rem;
+  width: 25rem;
+  position: absolute;
+  margin-top: 12%;
+  /* z-index: 1; */
+  margin-left: 43%;
+}
+.nilesh-image{
+  height: 100%;
+  width: 100%;
+}
 .web-dev-agen{
     color: white; font-size: 5vw; padding-top: 15%; font-weight: bolder;
 }
@@ -712,6 +731,10 @@ nav ul li a {
     .subhead2{
         width: 100%;
     }
+    .background{
+      background-size: contain; /* Adjust for smaller screens */
+      /* background-attachment: scroll; */
+    }
 }
 
 @media (max-width:640px){
@@ -724,6 +747,11 @@ nav ul li a {
   .web-dev-agen{
     margin-top: 100px;
   }
+  .nilesh{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+  }
   
   }
 
@@ -733,3 +761,4 @@ nav ul li a {
   }
   
   }
+
