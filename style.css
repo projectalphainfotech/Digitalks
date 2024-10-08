@@ -169,10 +169,10 @@ nav ul li a {
   z-index: 3;
 }
 .nilesh{
-  height: 30rem;
-  width: 25rem;
+  height: 40rem;
+  width: 30rem;
   position: absolute;
-  margin-top: 12%;
+  margin-top: 8%;
   /* z-index: 1; */
   margin-left: 43%;
 }
