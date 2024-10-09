@@ -594,8 +594,9 @@ nav ul li a {
     width: 100%;
     height: auto;
     margin: 0 5px;
+    padding: 5%;
     overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   }
   
   .cello img{
